@@ -1,0 +1,27 @@
+:root {
+    --theme-header-color: #e2e2e2;
+    --theme-odd-color: #f4ffed;
+    --theme-even-color: #fef5ee; 
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    background-color: var(--theme-header-color);
+    text-align: left;
+}
+
+tr:nth-child(odd) {
+    background-color: var(--theme-odd-color);
+}
+
+tr:nth-child(even) {
+    background-color: var(--theme-even-color);
+}
