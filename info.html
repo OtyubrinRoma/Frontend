@@ -15,61 +15,103 @@
 
 <body>
     <!-- Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
         <div class="container-fluid">
             <div class="collapse navbar-collapse justify-content-center" id="navbarText">
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="info.html">Info</a>
+                        <a class="nav-link active text-white" aria-current="page" href="info.html">Info</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="films.html">Films</a>
+                        <a class="nav-link active text-white" aria-current="page" href="films.html">Films</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="wrapper">
-        <div class="d-flex">
-            <nav id="sideNav" class="nav flex-column bg-light p-3"
-                style="width: 200px; position: fixed; top: 0; left: 0; height: 100vh;">
-                <a class="nav-link" href="#demo">Карусель</a>
-                <a class="nav-link" href="#cardsSection">Карточки с фильмами</a>
-                <a class="nav-link" href="#infoSection">Краткая информация об актёре</a>
-            </nav>
-        </div>
-        <div id="demo" class="carousel slide" data-bs-ride="carousel"  style="margin-left: 220px; padding-top: 20px;">
+    <div class="mainpage">
+        <nav id="navigation" class="nav flex-column bg-light p-3 bg-dark">
+            <a class="nav-link text-white" href="#demo">Карусель</a>
+            <a class="nav-link text-white" href="#cardsSection">Карточки с фильмами</a>
+            <a class="nav-link text-white" href="#infoSection">Краткая информация об актёре</a>
+        </nav>
+        <div class="main-container">
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-            <!-- Indicators -->
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                <!-- Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                </div>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/Mainpage_banner_1.jpg" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Mainpage_banner_2.jpg" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Mainpage_banner_3.jpg" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Mainpage_banner_4.jpg" class="d-block" style="width:100%">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
             </div>
-    
-            <!-- The slideshow -->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="images/Mainpage_banner_1.jpg" class="d-block" style="width:100%">
+            <div class="container-fluid mt-3 cards" id="cardsSection">
+                <div class="card bg-dark text-white" style="width: 30%;">
+                    <img src="images/Naked_Gun_Poster.jpg" class="card-image-top" style="width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Голый пистолет</h5>
+                        <p class="card-text">Самый некомпетентный полицейский, лейтенант Фрэнк Дребин, 
+                            должен в одиночку противостоять международному заговору, 
+                            цель которого — погубить королеву Елизавету II. 
+                            Ко всеобщему удивлению и радости глупейший из глупых лейтенант Дребин разберётся со всеми 
+                            врагами Её Величества так лихо, как не снилось и знаменитому агенту 007.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.kinopoisk.ru/film/4067/" class="btn btn-dark">Kinopoisk</a>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="images/Mainpage_banner_2.jpg" class="d-block" style="width:100%">
+                <div class="card bg-dark text-white" style="width: 30%;">
+                    <img src="images/Airplane.jpg" class="card-image-top" style="width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Аэроплан</h5>
+                        <p class="card-text">Пытаясь вернуть бросившую его стюардессу Илейн,
+                            бывший военный лётчик Тед Страйкер, страдающий посттравматическим стрессовым расстройством,
+                            поднимается на борт пассажирского лайнера, на котором летит Илейн.
+                            Во время полёта выясняется, что из-за пищевого отравления пилоты не в состоянии управлять самолётом.
+                            Единственной надеждой пассажиров на спасение становится Тед Страйкер.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.kinopoisk.ru/film/3231/" class="btn btn-dark">Kinopoisk</a>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="images/Mainpage_banner_3.jpg" class="d-block" style="width:100%">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/Mainpage_banner_4.jpg" class="d-block" style="width:100%">
+                <div class="card bg-dark text-white" style="width: 30%;">
+                    <img src="images/Wrongfully Accused.jpg" class="card-image-top" style="width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Без вины виноватый</h5>
+                        <p class="card-text">На самом пике своей блестящей карьеры красавец -
+                            суперскрипач Райан Харрисон оказался втянутым богатой искусительницей Лорен Гудхью в одно паршивое дельце,
+                            связанное с убийством. Несмотря на то, что покушавшийся был одноруким, одноногим и одноглазым,
+                            невезучий Харрисон был арестован, признан виновным и приговорен к смертной казни.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.kinopoisk.ru/film/21275/" class="btn btn-dark">Kinopoisk</a>
+                    </div>
                 </div>
             </div>
-    
-            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
         </div>
     </div>
 </body>
