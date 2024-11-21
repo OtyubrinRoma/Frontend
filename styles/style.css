@@ -1,3 +1,7 @@
+.mainpage {
+    background-color: black;
+}
+
 #navigation {
     position: fixed;
     top: 0;
@@ -9,7 +13,6 @@
 .main-container {
     margin-left: 200px; 
     padding-top: 20px;
-    background-color: black;
 }
 
 .cards {
